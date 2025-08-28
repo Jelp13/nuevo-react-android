@@ -91,7 +91,7 @@ function App() {
           <div className="input-group">
             <input
               type="text"
-              placeholder="¿Qué necesitas hacer hoy?"
+              placeholder="Agrega una nueva tarea"
               value={newTask}
               onChange={(e) => setNewTask(e.target.value)}
               onKeyPress={handleKeyPress}
@@ -126,7 +126,7 @@ function App() {
           {tasks.length === 0 ? (
             <div className="empty-state">
               <div className="empty-icon">📝</div>
-              <p className="empty-title">No hay tareas aún</p>
+              <p className="empty-title">No tienes tareas registradas</p>
               <p className="empty-subtitle">¡Agrega tu primera tarea para comenzar!</p>
             </div>
           ) : (
